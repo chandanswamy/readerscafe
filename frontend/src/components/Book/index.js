@@ -26,32 +26,33 @@ const Book = () => {
 
     useEffect(() => {
         setLoading(true);
-    
+      
         // First API call to get individual book data
         fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                setBookData(data);
-            })
-            .catch((error) => {
-                setLoading(false);
-            })
-            .finally(() => {
-                // Second API call to get similar books data
-                fetch(similarBooksUrl)
-                    .then(res => res.json())
-                    .then(data => {
-                        setBooksData(data.items);
-                    })
-                    .catch((error) => {
-                        setLoading(false);
-                    })
-                    .finally(() => {
-                        // Both API calls are completed, setLoading to false
-                        setLoading(false);
-                    });
-            });
-    }, [id, authors]);
+          .then(res => res.json())
+          .then(data => {
+            setBookData(data);
+          })
+          .catch((error) => {
+            setLoading(false);
+          });
+      }, [id]); // Only trigger when the 'id' changes
+      
+      useEffect(() => {
+        // Second API call to get similar books data
+        fetch(similarBooksUrl)
+          .then(res => res.json())
+          .then(data => {
+            setBooksData(data.items);
+          })
+          .catch((error) => {
+            setLoading(false);
+          })
+          .finally(() => {
+            // Both API calls are completed, setLoading to false
+            setLoading(false);
+          });
+      }, [authors]);
 
     
 

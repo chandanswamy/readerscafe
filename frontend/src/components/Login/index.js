@@ -35,7 +35,7 @@ const Login = () => {
              password,
              email,             
             };
-            const url = "http://localhost:8080/login";
+            const url = "https://readers-cafe-server.onrender.com/login";
             const options = {
               method: 'POST',
               headers: {

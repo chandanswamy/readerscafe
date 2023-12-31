@@ -41,7 +41,7 @@ const SignUp = () => {
              email,
              number
             };
-            const url = "http://localhost:8080/signup";
+            const url = "https://readers-cafe-server.onrender.com/signup";
             const options = {
               method: 'POST',
               headers: {
