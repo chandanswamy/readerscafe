@@ -1,0 +1,114 @@
+.header{
+    background-color: #234E70;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 150px;
+    @media screen and (max-width: 576px) {
+        height: 120px;
+
+    }
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        letter-spacing: 1px;
+        display: none;
+     }
+}
+
+.header-title{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 26px;
+    color: #FFF6E9;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: 0px;
+    @media screen and (max-width: 768px) {
+       font-size: 22px;
+       letter-spacing: 1px;
+
+    }
+
+}
+
+.header-tagline{
+    font-family: 'Luckiest Guy', cursive;
+    color: #FFF6E9;
+    letter-spacing: 4px;
+    font-size: 18px;
+    margin: 0px;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+
+.navbar{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        height: 120px;
+    }
+}
+
+.nav-list{
+    flex-grow: 1;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-item{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-button{
+    width: auto;
+    color: #FFF6E9;
+    list-style: none;
+    font-size: 16px;   
+    @media screen and (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.logout-button > li{
+    font-family: Roboto, 'san-serif';
+}
+
+.link-item > li{
+    color: #FFF6E9;
+    list-style: none;
+    font-size: 16px;
+    font-family: Roboto, 'san-serif';
+    @media screen and (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.logo{
+    height: 130px;
+    border-radius: 50%;
+    margin: 0px 10px;
+    @media screen and (max-width: 576px) {
+        height: 90px;
+
+    }
+}

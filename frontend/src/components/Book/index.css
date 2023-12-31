@@ -1,0 +1,193 @@
+.book{
+    min-height: calc(100vh - 150px);
+    background-color: #FFF6E9;
+    padding: 16px;
+}
+
+.book-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.similar-books{
+    width: 100%;
+    border-top: 1.5px solid #010;
+    margin-bottom: 10px;
+}
+
+.book-details-container{
+    width: 100%;
+    margin-bottom: 10px;
+    
+    @media screen and (min-width: 768px) {
+        width: 40%;
+    }
+}
+
+.book-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.book-description-container{
+    height: calc(100vh - 180px);
+    width: 100%;
+    border: 2px solid #EEA47F;
+    border-radius: 4px;    
+    padding: 12px;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+}
+
+.book-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book-page-title{
+    font-family: 'EB Garamond', serif;
+    margin: 0.4em 0;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 0px;
+    text-align: center;
+}
+
+.book-page-subtitle{
+    font-family: 'EB Garamond', serif;
+    margin: 0.4em 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px;
+    text-align: center;
+}
+
+.book-page-author{
+    font-family: Roboto, 'sans-serif';
+    margin: 0.4em 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px;
+    text-align: center;
+}
+
+.book-page-publish{
+    font-family: 'EB Garamond', serif;
+    margin: 0.4em 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px;
+    text-align: center;
+}
+
+.book-page-category{
+    font-family: 'EB Garamond', serif;
+    margin: 0.4em 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px;
+    text-align: center;
+}
+
+.book-thumbnail{
+    width: 60%;
+    max-width: 140px;
+    aspect-ratio: 3/4;
+    order: 1;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.description{
+    font-family: 'EB Garamond', serif;
+    margin: 1em 0;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0px;
+    text-align: left;
+}
+
+.paragraph{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    font-size: 17.5px;
+    font-weight: 400;
+    padding: 0px;
+    text-align: left;
+}
+
+
+
+.book-description-container::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+  
+.book-description-container::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Set the color of the thumb */
+    border-radius: 8px; /* Round the corners of the thumb */
+}
+  
+.book-description-container::-webkit-scrollbar-track {
+    background-color: #FFF6E9; /* Set the color of the track */
+}
+  
+  /* For Firefox */
+.book-description-container{
+    scrollbar-color: #3498db #FFF6E9;
+    -ms-overflow-style: none; /* Disable default scrollbar */
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: #3498db #FFF6E9; /* thumb color and track color */
+} 
+* {
+    scrollbar-face-color: #3498db; /* thumb color on hover */
+    scrollbar-track-color: #FFF6E9; /* track color on hover */
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button{
+    width: 60%;
+    max-width: 250px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFA351;
+    margin: 0.625em 0;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0px;
+    text-align: center;
+    border: 2px solid #FFA351;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}

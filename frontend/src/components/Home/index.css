@@ -1,0 +1,125 @@
+.home{
+    min-height: 100vh;
+    background-color: #FFF6E9;
+}
+
+.seach-bar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+}
+
+.search-input{
+    height: 42px;
+    width: 50%;
+    padding-left: 12px;
+    font-size: 16px;
+    text-align: left;
+    border: 2px solid #A7BEAE;
+    border-radius: 4px;
+    @media screen and (max-width: 576px) {
+        width: 90%;
+    }
+}
+
+.category-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin-top: 0.5em;
+}
+
+.category-item{
+    color: #333;
+    list-style: none;
+    border: 2px solid #191970;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 6px;
+}
+
+button{
+    background-color: transparent;
+    width: 100%;
+    border: 0px;
+    cursor: pointer;
+}
+
+.section {    
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 0.625em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+}
+
+.section-card{
+    width: 50%;
+    padding: 0 1em ;
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0.625em;
+}
+
+strong{
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.8;
+    margin: 1.25em 0;
+    font-size: 16px;
+}
+
+.end-tagline{
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+    padding: 1.25em 0;
+    @media screen and (max-width: 576px) {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.books-list{
+    padding: 0px;
+    margin: 0.8em 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    gap: 80px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 576px) {
+        margin: 0.625em 0 0 0;
+        gap: 16px;
+    }
+}
+
+.react-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
